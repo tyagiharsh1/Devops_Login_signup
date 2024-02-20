@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Navbar } from './Component/Navbar';
 import Login from './Component/Login';
 import Signup from './Component/Signup';
+import Home from './Component/Home';
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <Navbar /> 
     <div className="container">
       <Routes>
+        <Route path="/home" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
       </Routes>
